@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Mighty Tea</title>
+        <meta charset="UTF-0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="icon" type="x-icon" href="images/TMT.png">
+        <link rel="stylesheet" href="css.css">
+        <script src="js.js"></script>
+    </head>
+
+    <body>
+        <!--Banner-->
+        <div class="BannerContainer">
+            <div class="TopBanner">
+                <img src="images/TMT.png" class="icon">
+            </div>
+            <div class="MiddleBanner">
+                <a href="index.htm"><h1 class="header">The Mighty Tea</h1></a>
+            </div>
+            <div class="BottomBanner"></div>
+        </div>
+        <!--Buttons-->
+        <div class="ButtonContainer">
+            <a><button class="buttons">About Us</button></a>
+        </div>
+        <!--Main Content-->
+        <div class="posterContainer" style="border-top: none; border-bottom: none;">
+            <span style="margin-left: 80px;">
+                <iframe style=" height: 330px; width: 700px; overflow: hidden; border: solid 1px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1052.7290742870084!2d121.04304289310804!3d14.574717147794711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c84f24f39bed%3A0xa33de5e767b83d35!2sMinami%20Hair%20and%20Beauty%20Salon!5e0!3m2!1sen!2sph!4v1647856295233!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </span>
+            <span>
+                <div style=" height: 330px; width: 530px; margin-top: -335px; margin-left: 800px; font-family: 'Times New Roman';">
+                <p><b>Details</b></p>
+                <p>Our Headquarters is located in front of Philippine Christian
+                University, Manila Campus
+                </p>
+                <p><b>Contact number:</b> 0995-150-7534</p>
+                <p><a href="">www.TheMightyTeaOfficial.com</a></p>
+                <p>The Mighty Tea was founded on January 27, 2022, by
+                    Timothy A. Esturas. It aims to deliver and serve high-quality
+                    milk tea with different flavors available at a low price around
+                    NCR.
+                </p>
+                </div>
+            </span>
+        </div>
+        <!--Social Media-->
+        <div  class="socialcontainer" style="position: fixed; bottom: 15px; width: 1350px">
+        <span>
+            <a href="https://www.facebook.com/acesturas" target="_blank"><div><img src="images/fb.png" alt="Facebook Logo" class="fb"></div></a>
+            <a href="https://www.instagram.com/timothyaraojo/" target="_blank"><div><img src="images/ig.png" alt="Instagram Logo" class="ig"></div></a>
+            <a href="https://twitter.com/home?lang=en" target="_blank"><div><img src="images/twttr.png" alt="Instagram Logo" class="twtrr"></div></a>
+        </span>
+        <!--Help-->
+        <img src="images/h.png" alt="help" title="You're at the About us page" class="help">
+        </div>
+        <!--extra buttons-->
+        <div style="float: right; margin-top: 5px;">
+            <a id="back" onclick="reset()" href="homepage.htm"><button class="generalBack">Back</button></a>
+        </div>
+
+
+
+        <!--Loader-->
+        <script>
+            window.addEventListener("load", () => {
+          const loader = document.querySelector(".loader");
+          loader.classList.add("loader--hidden");
+          loader.addEventListener("transitionend", () => {
+           document.body.removeChild(loader);
+          });
+          });
+        </script>
+          <div class="loader"></div>
+        <!--Loader-->
+          
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

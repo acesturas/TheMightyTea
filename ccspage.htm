@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Mighty Tea</title>
+        <meta charset="UTF-0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="icon" type="x-icon" href="images/TMT.png">
+        <link rel="stylesheet" href="css.css">
+        <script src="js.js"></script>
+    </head>
+    <style>
+        body {
+            background-image: url('images/ccs.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <body>
+        <!--Banner-->
+        <div class="BannerContainer">
+            <div class="TopBanner">
+                <img src="images/TMT.png" class="icon">
+            </div>
+            <div class="MiddleBanner">
+                <a href="index.htm"><h1 class="header">The Mighty Tea</h1></a>
+            </div>
+            <div class="BottomBanner"></div>
+        </div>
+        <!--Buttons-->
+        <div class="ButtonContainer">
+            <a><button id="title" class="buttons">Cream Cheese Series</button></a>
+        </div>
+        <!--Main Content-->
+        <div id="MainContainer" class="posterContainer" style="height: 280px;">
+            <span>
+                <div class="choicesContainer">
+                    <li id="cccar" onclick="cccaramel()">Cream Cheese Caramel</li>
+                    <li id="cctar" onclick="cctaro()">Cream Cheese Taro</li>
+                    <li id="ccmel" onclick="ccmelon()">Cream Cheese Melon</li>
+                    <li id="ccman" onclick="ccmango()">Cream Cheese Mango</li>
+                    <li id="cccho" onclick="ccchocolate()">Cream Cheese Chocolate</li>
+                </div>
+            </span>
+            <!--PRODUCT-->
+                <div id="cccaramel" class="ccsProductDiv" style="display: block;">
+                    <img src="images/productCCCar.png" alt="" class="product">
+                    <div style="margin-top: -190px; margin-left: 200px;">
+                        <input id="qcar" type="number" max="99" min="1" value="1"  class="quantity" onclick="updatecar();">
+                    </div>
+                    <div style="margin-top: 50px; margin-left: 200px; font-family: 'Courgette'; font-size: 20px;">
+                        <span><span>Php  </span><span id="pricecar">85</span></span>
+                    </div>
+                    <div><button class="productOK" onclick="OKcar()">OK</button></div>
+                </div>
+                <div id="cctaro" class="ccsProductDiv">
+                    <img src="images/ProductCCT.png" alt="" class="product">
+                    <div style="margin-top: -190px; margin-left: 200px;">
+                        <input id="qtar" type="number" max="99" min="1" value="1"  class="quantity" onclick="updatetar();">
+                    </div>
+                    <div style="margin-top: 50px; margin-left: 200px; font-family: 'Courgette'; font-size: 20px;">
+                        <span><span>Php  </span><span id="pricetar">80</span></span>
+                    </div>
+                    <div><button class="productOK" onclick="OKtar()">OK</button></div>
+                </div>
+                <div id="ccmelon" class="ccsProductDiv">
+                    <img src="images/ProductCCMel.png" alt="" class="product">
+                    <div style="margin-top: -190px; margin-left: 200px;">
+                        <input id="qmel" type="number" max="99" min="1" value="1"  class="quantity" onclick="updatemel();">
+                    </div>
+                    <div style="margin-top: 50px; margin-left: 200px; font-family: 'Courgette'; font-size: 20px;">
+                        <span><span>Php  </span><span id="pricemel">90</span></span>
+                    </div>
+                    <div><button class="productOK" onclick="OKmel()">OK</button></div>
+                </div>
+                <div id="ccmango" class="ccsProductDiv">
+                    <img src="images/productCCMan.png" alt="" class="product">
+                    <div style="margin-top: -190px; margin-left: 200px;">
+                        <input id="qman" type="number" max="99" min="1" value="1"  class="quantity" onclick="updateman();">
+                    </div>
+                    <div style="margin-top: 50px; margin-left: 200px; font-family: 'Courgette'; font-size: 20px;">
+                        <span><span>Php  </span><span id="priceman">80</span></span>
+                    </div>
+                    <div><button class="productOK" onclick="OKman()">OK</button></div>
+                </div>
+                <!--try-->
+                <div id="ccchocolate" class="ccsProductDiv">
+                    <img src="images/productCCChoc.png" alt="" class="product">
+                    <div style="margin-top: -190px; margin-left: 200px;">
+                        <input id="qcho" type="number" max="99" min="1" value="1"  class="quantity" onclick="updatecho();">
+                    </div>
+                    <div style="margin-top: 50px; margin-left: 200px; font-family: 'Courgette'; font-size: 20px;">
+                        <span><span>Php  </span><span id="pricecho">75</span></span>
+                    </div>
+                    <div><button class="productOK" onclick="OKcho()">OK</button></div>
+                </div>
+            <!--PRODUCT-->
+            <!--LIST-->
+                <div class="list">
+<p style="font-family: 'Courgette'; padding-top: 5px; text-align: center; margin-top: 0px; font-size: 25px;">Orders:</p>
+<div style="margin-left: 100px; margin-bottom: 3px;"><span id="order1"></span><span id="quantity1"></span></div>
+<div style="margin-left: 100px; margin-bottom: 3px;"><span id="order2"></span><span id="quantity2"></span></div>
+<div style="margin-left: 100px; margin-bottom: 3px;"><span id="order3"></span><span id="quantity3"></span></div>
+<div style="margin-left: 100px; margin-bottom: 3px;"><span id="order4"></span><span id="quantity4"></span></div>
+<div style="margin-left: 100px; margin-bottom: 3px;"><span id="order5"></span><span id="quantity5"></span></div>
+<div style="position: fixed; bottom: 160px; margin-left: -30px;"><button class="productOK" onclick="resetlist()">reset</button></div>
+                </div>
+            <!--LIST-->
+        </div>
+        <!--Main Content-->
+        <div id="BillContainer" class="posterContainer" style="height: 280px; display: none;">
+            <div class="table">
+                <table>
+                    <tr>
+                        <th class="tableorder">order</th>
+                        <th class="tablequantity">quantity</th>
+                        <th class="tableprice">price</th>
+                    </tr>
+                    <tr>
+                        <td id="border1">⠀</td>
+                        <td id="bquality1" class="center"></td>
+                        <td id="bprice1" class="right"></td>
+                    </tr>
+                    <tr>
+                        <td id="border2">⠀</td>
+                        <td id="bquality2" class="center"></td>
+                        <td id="bprice2" class="right"></td>
+                    </tr>
+                    <tr>
+                        <td id="border3">⠀</td>
+                        <td id="bquality3" class="center"></td>
+                        <td id="bprice3" class="right"></td>
+                    </tr>
+                    <tr>
+                        <td id="border4">⠀</td>
+                        <td id="bquality4" class="center"></td>
+                        <td id="bprice4" class="right"></td>
+                    </tr>
+                    <tr>
+                        <td id="border5">⠀</td>
+                        <td id="bquality5" class="center"></td>
+                        <td id="bprice5" class="right"></td>
+                    </tr>
+                    <tr>
+                        <td id="total">Total: </td>
+                        <td></td>
+                        <b><td class="right" id="totalvalue" style="background-color: red; color: white; font-size: 25px;"></td></b>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <!--extra buttons-->
+        <div style="float: right; margin-top: 5px;">
+            <a href="information.htm"><button class="submit" style="display: none;" id="newDone">Done</button></a>
+            <a id="done"><button class="submit" onclick="done()" style="display: inline;">Done</button></a>
+            <a id="back" onclick="reset()" href="featuredpage.htm"><button class="generalBack">Back</button></a>
+        </div>
+        <!--Social Media-->
+        <div  class="socialcontainer" style="position: fixed; bottom: 15px; width: 1350px">
+        <span>
+            <a href="https://www.facebook.com/acesturas" target="_blank"><div><img src="images/fb.png" alt="Facebook Logo" class="fb"></div></a>
+            <a href="https://www.instagram.com/timothyaraojo/" target="_blank"><div><img src="images/ig.png" alt="Instagram Logo" class="ig"></div></a>
+            <a href="https://twitter.com/home?lang=en" target="_blank"><div><img src="images/twttr.png" alt="Instagram Logo" class="twtrr"></div></a>
+        </span>
+
+        <!--Help-->
+        <img src="images/h.png" alt="help" title="You're at the Cream Cheese page" class="help">
+        </div>
+
+
+        <!--Loader-->
+        <script>
+            window.addEventListener("load", () => {
+          const loader = document.querySelector(".loader");
+          loader.classList.add("loader--hidden");
+          loader.addEventListener("transitionend", () => {
+           document.body.removeChild(loader);
+          });
+          });
+        </script>
+          <div class="loader"></div>
+        <!--Loader-->
+          
+
+
+
+
+
+    </body>
+
+</html>

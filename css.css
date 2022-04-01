@@ -1,0 +1,399 @@
+body {
+    background-image: url('images/bgbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.BannerContainer {
+    height: 160px;
+    margin-top: -8px;
+}
+.TopBanner {
+    background-color: rgb(216, 178, 92, 0.8);
+    height: 15%;
+}
+.MiddleBanner {
+    background-color:white;
+    height: 70%;
+}
+.BottomBanner {
+    background-color: rgb(216, 178, 92, 0.8);
+    height: 15%;
+}
+.icon {
+    height: 667%;
+    margin-left: 100px;
+}
+.header {
+    font-family: "Cooper Black";
+    white-space: nowrap;
+    color: black;
+    height: 80px;
+    margin-left: 300px;
+    margin-top: 0px;
+    font-size: 100px;
+}
+.ButtonContainer {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgba(61, 255, 126, 1);
+    white-space: nowrap;
+}
+.buttons {
+    height: 40px;
+    width: 210px;
+    background-color: rgba(61, 255, 126, 0.5);
+    font-family: fugaz one; 
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: -5px;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
+.buttons:hover {
+    background-color: rgba(255, 255, 255);
+}
+.posterContainer {
+    height: 308.5px;
+    width: 1364px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-top: solid rgba(216, 178, 92, 0.8) 15px;
+    border-bottom: solid rgba(61, 255, 126, 0.8) 15px;
+    background-color: rgba(216, 178, 92, 0.3);
+}
+.posterLeft {
+    height: 308.5px; 
+    margin-left: 53px;
+    float: left;
+}
+.posterRight {
+    height: 308.5px; 
+    margin-right: 53px;
+    float: right;
+}
+.socialcontainer {
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+.fb {
+    float: left;
+    height: 40px;
+    margin-left: 600px;
+}
+.fb:hover{
+    margin-top: -5px;
+}
+.ig {
+    float: left;
+    height: 40px;
+    margin-left: 6px;
+}
+.ig:hover{
+    margin-top: -5px;
+}
+.twtrr {
+    float: left;
+    height: 52px;
+    margin-top: -6px;
+}
+.twtrr:hover{
+    margin-top: -11px;
+}
+.help {
+    height: 25px;
+    float: right;
+    bottom: 0px;
+}
+.containerSpan {
+    display: inline-block;
+    width: 300px;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 130px;
+}
+.ccschoices {
+    width: 100%;
+    height: 100%;
+    background: url('images/ccs.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-family: "Bowlby One SC";
+    border-radius: 10px;
+    color: black;
+}
+.choschoices {
+    width: 100%;
+    height: 100%;
+    background: url('images/chos.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-family: "Bowlby One SC";
+    color: white;
+    border-radius: 10px;
+    color: white;
+}
+.carschoices {
+    width: 100%;
+    height: 100%;
+    background: url('images/cars.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-family: "Bowlby One SC";
+    border-radius: 10px;
+    color: black;
+}
+.uschoices {
+    width: 100%;
+    height: 100%;
+    background: url('images/us.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-family: "Bowlby One SC";
+    color: white;
+    border-radius: 10px;
+    color: white;
+}
+.mschoices {
+    width: 100%;
+    height: 100%;
+    background: url('images/ms.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-family: "Bowlby One SC";
+    border-radius: 10px;
+    color: black;
+}
+.ccschoices:hover {
+    background-image: url('images/ccs.png');
+    font-size: 19px;
+    transform: scale(1.2); 
+    cursor: pointer;
+    color: black;
+}
+.choschoices:hover {
+    background-image: url('images/chos.png');
+    background-size: cover;
+    font-size: 19px;
+    color: white;
+    transform: scale(1.2); 
+    cursor: pointer;
+    color: white;
+}
+.carschoices:hover {
+    background-image: url('images/cars.png');
+    background-size: cover;
+    font-size: 19px;
+    transform: scale(1.2); 
+    cursor: pointer;
+    color: black;
+}
+.uschoices:hover {
+    background-image: url('images/us.jpg');
+    background-size: cover;
+    font-size: 19px;
+    color: white;
+    transform: scale(1.2); 
+    cursor: pointer;
+    color: white;
+}
+.mschoices:hover {
+    background-image: url('images/ms.png');
+    background-size: cover;
+    font-size: 19px;
+    transform: scale(1.2); 
+    cursor: pointer;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+li {
+    font-family: "Imprint MT Shadow";
+}
+li:hover {
+    font-weight: bold !important;
+}
+.generalBack {
+    height: 40px;
+    width: 210px;
+    background-color: rgba(61, 255, 126);
+    font-family: fugaz one; 
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
+.buy {
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+}
+.submit {
+    border-radius: 20px;
+    height: 40px;
+    width: 210px;
+    background-color: rgba(61, 255, 126);
+    font-family: fugaz one; 
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
+.generalBack:hover {
+    background-color: rgb(151, 151, 151);
+}
+.submit:hover {
+    background-color: rgb(255, 255, 255);
+}
+.choicesContainer {
+    height: 250px;
+    width: 500px;
+    margin-left: 100px;
+    font-size: 40px;
+    margin-top: 15px;
+}
+.choicesContainer:hover {
+    cursor: pointer;
+}
+.ccsProductDiv {
+    display: none;
+    background: url('images/ccs2.png');
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    margin-left: 600px;
+    margin-top: -255px;
+}
+.product {
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.list {
+    background: url('images/ccs.png');
+    height: 250px;
+    width: 400px;
+    margin-left: 920px;
+    margin-top: -250px;
+}
+.quantity {
+    height: 50px; 
+    width: 50px;
+    font-size: 30px; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+.productOK {
+    height: 25px;
+    width: 75px;
+    margin-left: 190px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.tableorder {
+    width: 400px;
+}
+.tablequantity {
+    width: 200px;
+}
+.tableprice {
+    width: 200px;
+}
+.table {
+    margin-left: 280px;
+    margin-top: 25px;
+}
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgba(61, 255, 126, 0.5);
+    font-size: 20px;
+    font-family: fugaz one;
+}
+
+
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff77;
+    transition: opacity .5s, visibility .5s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #dddddd;
+    border-top-color: rgba(61, 255, 126, 1);
+    border-radius: 50%;
+    animation: loading .5s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(2turn);
+    }
+  }
